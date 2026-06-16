@@ -1,0 +1,82 @@
+{
+  "HomePage": {
+    "title": "Kulit Anda, Diselaraskan.",
+    "description": "Rutin penjagaan kulit tempatan yang disesuaikan untuk iklim Malaysia dan masalah kulit unik anda.",
+    "cta": "Ambil Kuiz Kulit"
+  },
+  "Header": {
+    "quiz": "Kuiz Kulit",
+    "login": "Log Masuk"
+  },
+  "Footer": {
+    "about": "Rutin penjagaan kulit yang disusun secara pakar untuk rakyat Malaysia moden, dikuasakan oleh sains dan pengetahuan tempatan.",
+    "links": "Pautan Pantas",
+    "location": "Lokasi"
+  },
+  "Quiz": {
+    "steps": {
+      "skinType": "Jenis Kulit",
+      "concerns": "Masalah Utama",
+      "environment": "Persekitaran",
+      "sensitivity": "Sensitiviti"
+    },
+    "skinType": {
+      "question": "Apakah jenis kulit utama anda?",
+      "oily": "Berminyak",
+      "oilyDesc": "Berkilat, liang pori besar, cenderung berjerawat.",
+      "dry": "Kering",
+      "dryDesc": "Tegang, mengelupas, kusam, kadangkala gatal.",
+      "combination": "Kombinasi",
+      "combinationDesc": "Zon-T berminyak, pipi kering atau normal.",
+      "normal": "Normal",
+      "normalDesc": "Seimbang, kurang cela, tidak sensitif."
+    },
+    "concerns": {
+      "question": "Pilih masalah kulit utama anda (pilih sehingga 3)",
+      "acne": "Jerawat",
+      "aging": "Penuaan & Garis Halus",
+      "pigmentation": "Bintik Hitam & Pigmentasi",
+      "texture": "Tekstur Tidak Sekata",
+      "dullness": "Kusam",
+      "pores": "Liang Pori Besar"
+    },
+    "environment": {
+      "question": "Apakah persekitaran harian biasa anda?",
+      "humid": "Lembap (Luar)",
+      "dry": "Iklim Kering",
+      "air-conditioned": "Dalam Bangunan (Berhawa Dingin)",
+      "tropical": "Panas & Tropika"
+    },
+    "sensitivity": {
+      "question": "Sejauh manakah sensitiviti kulit anda?",
+      "low": "Tidak Sensitif",
+      "medium": "Agak Sensitif",
+      "high": "Sangat Sensitif"
+    },
+    "buttons": {
+      "next": "Seterusnya",
+      "back": "Kembali",
+      "results": "Dapatkan Rutin Saya"
+    }
+  },
+  "Auth": {
+    "signInTitle": "Selamat Kembali",
+    "signInDesc": "Log masuk ke akaun anda untuk melihat rutin anda.",
+    "signUpTitle": "Simpan Rutin Anda",
+    "signUpDesc": "Cipta akaun untuk menyimpan keputusan diagnostik dan mengakses langganan.",
+    "email": "Alamat Emel",
+    "password": "Kata Laluan",
+    "signInButton": "Log Masuk",
+    "signUpButton": "Cipta Akaun",
+    "loading": "Memproses...",
+    "noAccount": "Tiada akaun? Daftar Sekarang",
+    "hasAccount": "Sudah mempunyai akaun? Log Masuk"
+  },
+  "Results": {
+    "title": "Rutin Peribadi Anda",
+    "checkoutTitle": "Bersedia untuk mulakan perjalanan anda?",
+    "checkoutDesc": "Pilih antara pembelian sekali sahaja atau langganan untuk menjimatkan 15% dan pastikan anda tidak kehabisan produk penting.",
+    "oneTime": "Pembelian Sekali Sahaja",
+    "subscribe": "Langgan & Jimat 15%"
+  }
+}

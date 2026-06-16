@@ -1,0 +1,82 @@
+{
+  "HomePage": {
+    "title": "Your Skin, Synced.",
+    "description": "Localized skincare routines tailored for the Malaysian climate and your unique skin concerns.",
+    "cta": "Take the Skin Quiz"
+  },
+  "Header": {
+    "quiz": "Skin Quiz",
+    "login": "Login"
+  },
+  "Footer": {
+    "about": "Expertly curated skincare routines for the modern Malaysian, powered by science and local knowledge.",
+    "links": "Quick Links",
+    "location": "Location"
+  },
+  "Quiz": {
+    "steps": {
+      "skinType": "Skin Type",
+      "concerns": "Primary Concerns",
+      "environment": "Environment",
+      "sensitivity": "Sensitivity"
+    },
+    "skinType": {
+      "question": "What is your primary skin type?",
+      "oily": "Oily",
+      "oilyDesc": "Shiny, large pores, prone to breakouts.",
+      "dry": "Dry",
+      "dryDesc": "Tight, flaky, dull, sometimes itchy.",
+      "combination": "Combination",
+      "combinationDesc": "Oily T-zone, dry or normal cheeks.",
+      "normal": "Normal",
+      "normalDesc": "Balanced, few imperfections, not sensitive."
+    },
+    "concerns": {
+      "question": "Select your primary skin concerns (pick up to 3)",
+      "acne": "Acne & Breakouts",
+      "aging": "Aging & Fine Lines",
+      "pigmentation": "Dark Spots & Pigmentation",
+      "texture": "Uneven Texture",
+      "dullness": "Dullness",
+      "pores": "Enlarged Pores"
+    },
+    "environment": {
+      "question": "What is your typical daily environment?",
+      "humid": "Outdoor Humid",
+      "dry": "Dry Climate",
+      "air-conditioned": "Indoor Air-conditioned",
+      "tropical": "Hot & Tropical"
+    },
+    "sensitivity": {
+      "question": "How sensitive is your skin?",
+      "low": "Not Sensitive",
+      "medium": "Somewhat Sensitive",
+      "high": "Very Sensitive"
+    },
+    "buttons": {
+      "next": "Next",
+      "back": "Back",
+      "results": "Get My Routine"
+    }
+  },
+  "Auth": {
+    "signInTitle": "Welcome Back",
+    "signInDesc": "Sign in to your account to view your routine.",
+    "signUpTitle": "Save Your Routine",
+    "signUpDesc": "Create an account to save your diagnostic results and access subscriptions.",
+    "email": "Email Address",
+    "password": "Password",
+    "signInButton": "Sign In",
+    "signUpButton": "Create Account",
+    "loading": "Processing...",
+    "noAccount": "Don't have an account? Sign Up",
+    "hasAccount": "Already have an account? Sign In"
+  },
+  "Results": {
+    "title": "Your Personalized Routine",
+    "checkoutTitle": "Ready to start your journey?",
+    "checkoutDesc": "Choose between a one-time purchase or a subscription to save 15% and never run out of your essential products.",
+    "oneTime": "One-time Purchase",
+    "subscribe": "Subscribe & Save 15%"
+  }
+}

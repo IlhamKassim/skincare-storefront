@@ -10,11 +10,10 @@ const messageMap: Record<string, any> = {
 };
 
 export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locale || !routing.locales.includes(locale as any)) notFound();
+  const currentLocale = locale && routing.locales.includes(locale as any) ? locale : 'en';
 
   return {
-    locale: locale as string,
-    messages: messageMap[locale as string] || enMessages
+    locale: currentLocale as string,
+    messages: messageMap[currentLocale as string] || enMessages
   };
 });

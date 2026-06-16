@@ -1,12 +1,11 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Link} from '@/i18n/routing';
-import {setRequestLocale} from 'next-intl/server';
 
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
   
-  const t = useTranslations('HomePage');
+  const t = await getTranslations('HomePage');
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-200px)] text-center px-4">

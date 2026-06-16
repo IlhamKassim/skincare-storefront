@@ -1,0 +1,103 @@
+# Project Context & Blueprint: Curated Skincare Routine Builder
+
+## 1. Project Overview
+
+**Name:** SkinSync (Placeholder)
+**Description:** A localized, Business-to-Consumer (B2C) e-commerce platform tailored for the Malaysian market. Instead of a traditional catalog, the platform acts as an automated skincare consultant. Users take a dynamic diagnostic quiz, which maps their skin type and concerns to a highly curated, multi-step skincare routine. Users can buy the routine as a one-off bundle or subscribe for automated replenishments.
+**Primary Goal:** Build an MVP (Minimum Viable Product) that handles the frontend quiz, the recommendation logic, and the checkout/subscription flow.
+
+## 2. Tech Stack Requirements
+
+* **Framework:** Next.js 14+ (App Router)
+* **Styling:** Tailwind CSS + shadcn/ui (for fast, accessible UI components)
+* **Backend / Database:** Supabase (PostgreSQL)
+* **Authentication:** Supabase Auth (Email/Password & Google OAuth)
+* **Payments:** Stripe (for recurring subscriptions) AND/OR Billplz/SenangPay (for local Malaysian FPX bank transfers — we will start with Stripe for the MVP subscription logic).
+* **State Management:** Zustand or React Context (for holding quiz state before auth).
+
+## 3. Core User Flow
+
+1. **Landing Page:** Value proposition focusing on personalized, authentic skincare. Clear Call-to-Action: "Take the Skin Quiz."
+2. **Diagnostic Quiz:** A multi-step interactive form asking about:
+* Skin Type (Oily, Dry, Combination, Normal)
+* Primary Concerns (Acne, Aging, Pigmentation, Texture)
+* Climate/Environment (e.g., High humidity/Tropical)
+* Sensitivity level
+
+
+3. **Routine Generation:** The app processes the quiz state and queries the database to assemble a personalized routine (e.g., Cleanser + Toner + Serum + Moisturizer + Sunscreen).
+4. **Auth Wall / Results:** User must create an account (or sign in) to view and save their detailed routine.
+5. **Checkout:** User is presented with two purchasing options:
+* *One-time purchase* of the bundle.
+* *Subscribe & Save* (e.g., 15% off, replenishes every 60 days).
+
+
+6. **User Dashboard:** A secure portal where users can track their order, view their customized routine instructions, and manage/cancel their subscription.
+
+## 4. Database Schema (Supabase / PostgreSQL)
+
+Please design the database with the following core tables:
+
+* **`users`**
+* `id` (UUID, maps to Supabase Auth)
+* `email`, `full_name`, `created_at`
+* `stripe_customer_id`
+
+
+* **`products`**
+* `id`, `name`, `brand`, `description`, `price`
+* `category` (Cleanser, Toner, Serum, etc.)
+* `skin_type_target` (Array of targeted types)
+* `concern_target` (Array of targeted concerns)
+* `stripe_price_id` (For subscription billing)
+* `image_url`, `stock_count`
+
+
+* **`quiz_results`**
+* `id`, `user_id` (FK to users)
+* `answers` (JSONB - stores the raw quiz responses)
+* `recommended_routine` (JSONB - array of product IDs)
+* `created_at`
+
+
+* **`subscriptions`**
+* `id`, `user_id` (FK to users)
+* `stripe_subscription_id`, `status` (active, canceled, past_due)
+* `routine_id` (FK to quiz_results)
+* `next_billing_date`
+
+
+
+## 5. Development Phases for the Agent
+
+*Agent: Please execute the build in the following order. Wait for my confirmation after completing each phase.*
+
+**Phase 1: Project Initialization & UI Shell**
+
+* Initialize Next.js app with Tailwind and shadcn/ui.
+* Set up the global layout, navigation bar, and footer.
+* Build the static Landing Page.
+
+**Phase 2: The Diagnostic Quiz (Frontend)**
+
+* Build the multi-step quiz component using React state (no database connection needed yet).
+* Ensure smooth transitions between questions.
+* Log the final quiz payload to the console at the end of the flow.
+
+**Phase 3: Backend & Recommendation Logic**
+
+* Initialize Supabase and set up the schema.
+* Seed the `products` table with 10-15 dummy skincare items (brands like COSRX, Anua) with varied `skin_type_target` arrays.
+* Write the matching algorithm: A server action that takes the quiz payload and returns a filtered list of 4-5 products that make up a logical routine.
+
+**Phase 4: Auth & Checkout**
+
+* Implement Supabase Auth. Force users to sign up to save their quiz results.
+* Integrate Stripe Checkout.
+* Create the UI for the "Your Routine" page featuring the Subscribe vs. One-Time purchase buttons.
+
+## 6. Design & Tone Guidelines
+
+* **Visuals:** Minimalist, clean, clinical but warm. Use ample whitespace, soft neutral backgrounds (creams, soft grays), and dark high-contrast typography.
+* **Tone:** Expert, reassuring, and personalized. Avoid aggressive sales copy.
+* **Mobile-First:** A large percentage of Malaysian consumers shop exclusively on mobile. The quiz and checkout must be perfectly responsive.

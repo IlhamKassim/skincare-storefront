@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,9 +21,6 @@ export const metadata: Metadata = {
   description: "Personalized skincare routines for the Malaysian market.",
 };
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
 export default async function RootLayout({
   children,
   params
@@ -32,15 +29,20 @@ export default async function RootLayout({
   params: Promise<{locale: string}>;
 }) {
   const {locale} = await params;
-  
+  const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <main className="flex-grow">
-          {children}
-        </main>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -32,7 +32,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
             <p className="text-sm text-gray-600 mb-1">Email</p>
             <p className="font-medium mb-4">{user?.email || 'demo@skinsync.com'}</p>
             {user && (
-              <form action="/auth/signout" method="post">
+              <form action="/api/auth/signout" method="post">
                 <Button variant="outline" type="submit">Sign Out</Button>
               </form>
             )}

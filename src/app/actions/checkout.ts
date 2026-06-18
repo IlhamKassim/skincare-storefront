@@ -20,8 +20,13 @@ export async function createCheckoutSession(products: Product[], mode: 'payment'
     redirect('/auth');
   }
 
+  const missingPriceProduct = products.find((product) => !product.stripe_price_id);
+  if (missingPriceProduct) {
+    throw new Error(`Product "${missingPriceProduct.name}" is missing a stripe_price_id`);
+  }
+
   const line_items = products.map((product) => ({
-    price: product.stripe_price_id, // Ensure this exists in your DB
+    price: product.stripe_price_id,
     quantity: 1,
   }));
 

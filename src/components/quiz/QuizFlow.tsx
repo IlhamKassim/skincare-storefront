@@ -20,7 +20,7 @@ const steps = [
 
 export default function QuizFlow() {
   const t = useTranslations('Quiz');
-  const { currentStep, prevStep, nextStep } = useQuizStore();
+  const { currentStep, prevStep } = useQuizStore();
   
   const CurrentStepComponent = steps[currentStep]?.component;
   const progress = ((currentStep + 1) / steps.length) * 100;

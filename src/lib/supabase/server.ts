@@ -1,7 +1,8 @@
 import { createServerClient } from '@supabase/ssr'
+import type { SupabaseClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 
-export async function createClient() {
+export async function createClient(): Promise<SupabaseClient> {
   const cookieStore = await cookies()
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -11,6 +12,7 @@ export async function createClient() {
       auth: {
         getUser: async () => ({ data: { user: null }, error: null }),
         getSession: async () => ({ data: { session: null }, error: null }),
+        signOut: async () => ({ error: null }),
       },
       from: () => ({
         select: () => ({
@@ -18,7 +20,7 @@ export async function createClient() {
           error: null,
         }),
       }),
-    } as any;
+    } as unknown as SupabaseClient;
   }
 
   return createServerClient(url, key, {

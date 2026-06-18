@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { QuizState, QuizActions, SkinType, SkinConcern, Environment, SensitivityLevel } from '@/types/quiz';
+import { QuizState, QuizActions } from '@/types/quiz';
 
 const initialState: QuizState = {
   skinType: null,

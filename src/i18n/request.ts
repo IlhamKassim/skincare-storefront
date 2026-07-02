@@ -14,8 +14,9 @@ function isLocale(value: string): value is Locale {
   return routing.locales.includes(value as Locale);
 }
 
-export default getRequestConfig(async ({locale}) => {
-  const currentLocale: Locale = locale && isLocale(locale) ? locale : 'en';
+export default getRequestConfig(async ({requestLocale}) => {
+  const requested = await requestLocale;
+  const currentLocale: Locale = requested && isLocale(requested) ? requested : routing.defaultLocale;
 
   return {
     locale: currentLocale,

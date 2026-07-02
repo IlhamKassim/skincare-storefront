@@ -1,8 +1,10 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuizStore } from '@/store/useQuizStore';
+import { useRouter } from '@/i18n/routing';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import SkinTypeStep from './steps/SkinTypeStep';
@@ -20,10 +22,17 @@ const steps = [
 
 export default function QuizFlow() {
   const t = useTranslations('Quiz');
+  const router = useRouter();
   const { currentStep, prevStep } = useQuizStore();
-  
+
   const CurrentStepComponent = steps[currentStep]?.component;
   const progress = ((currentStep + 1) / steps.length) * 100;
+
+  useEffect(() => {
+    if (!CurrentStepComponent) {
+      router.push('/results');
+    }
+  }, [CurrentStepComponent, router]);
 
   if (!CurrentStepComponent) {
     return (

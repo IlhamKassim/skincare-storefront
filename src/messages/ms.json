@@ -45,7 +45,8 @@
       "humid": "Lembap (Luar)",
       "dry": "Iklim Kering",
       "air-conditioned": "Dalam Bangunan (Berhawa Dingin)",
-      "tropical": "Panas & Tropika"
+      "tropical": "Panas & Tropika",
+      "barrierWarning": "Haba dan kelembapan memerangkap krim berat dan oklusif pada kulit, yang boleh merosakkan lapisan pelindung kelembapan dan menyumbat liang pori. Kami akan mengutamakan gel ringan dan formula tidak menyumbat pori untuk rutin anda."
     },
     "sensitivity": {
       "question": "Sejauh manakah sensitiviti kulit anda?",
@@ -74,9 +75,8 @@
   },
   "Results": {
     "title": "Rutin Peribadi Anda",
-    "checkoutTitle": "Bersedia untuk mulakan perjalanan anda?",
-    "checkoutDesc": "Pilih antara pembelian sekali sahaja atau langganan untuk menjimatkan 15% dan pastikan anda tidak kehabisan produk penting.",
-    "oneTime": "Pembelian Sekali Sahaja",
-    "subscribe": "Langgan & Jimat 15%"
+    "shopOn": "Beli di {platform}",
+    "checkoutTitle": "Bersedia untuk membeli rutin anda?",
+    "affiliateDisclaimer": "SkinSync memaut ke peruncit dipercayai seperti Shopee, Lazada, dan TikTok Shop. Kami mungkin memperoleh komisen daripada pembelian yang layak, tanpa sebarang kos tambahan kepada anda."
   }
 }

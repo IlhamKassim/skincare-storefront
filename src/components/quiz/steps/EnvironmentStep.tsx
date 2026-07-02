@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 const environments: Environment[] = ['humid', 'dry', 'air-conditioned', 'tropical'];
+const HIGH_HUMIDITY_ENVIRONMENTS: Environment[] = ['humid', 'tropical'];
 
 export default function EnvironmentStep() {
   const t = useTranslations('Quiz');
@@ -38,6 +39,11 @@ export default function EnvironmentStep() {
           </Card>
         ))}
       </div>
+      {environment && HIGH_HUMIDITY_ENVIRONMENTS.includes(environment) && (
+        <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-4 text-center">
+          {t('environment.barrierWarning')}
+        </p>
+      )}
     </div>
   );
 }

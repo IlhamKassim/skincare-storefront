@@ -45,7 +45,8 @@
       "humid": "Outdoor Humid",
       "dry": "Dry Climate",
       "air-conditioned": "Indoor Air-conditioned",
-      "tropical": "Hot & Tropical"
+      "tropical": "Hot & Tropical",
+      "barrierWarning": "Heat and humidity trap heavy, occlusive creams against the skin, which can break down your moisture barrier and clog pores. We'll prioritize lightweight gels and non-comedogenic formulas for your routine."
     },
     "sensitivity": {
       "question": "How sensitive is your skin?",
@@ -74,9 +75,8 @@
   },
   "Results": {
     "title": "Your Personalized Routine",
-    "checkoutTitle": "Ready to start your journey?",
-    "checkoutDesc": "Choose between a one-time purchase or a subscription to save 15% and never run out of your essential products.",
-    "oneTime": "One-time Purchase",
-    "subscribe": "Subscribe & Save 15%"
+    "shopOn": "Shop on {platform}",
+    "checkoutTitle": "Ready to shop your routine?",
+    "affiliateDisclaimer": "SkinSync links to trusted retailers like Shopee, Lazada, and TikTok Shop. We may earn a commission on qualifying purchases, at no extra cost to you."
   }
 }

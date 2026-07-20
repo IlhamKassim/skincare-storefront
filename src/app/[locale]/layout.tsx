@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik, Nunito_Sans, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, setRequestLocale} from 'next-intl/server';
@@ -7,8 +7,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {routing} from '@/i18n/routing';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const rubik = Rubik({
+  variable: "--font-heading",
+  subsets: ["latin"],
+});
+
+const nunitoSans = Nunito_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
@@ -43,7 +48,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${rubik.variable} ${nunitoSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col font-sans`}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />

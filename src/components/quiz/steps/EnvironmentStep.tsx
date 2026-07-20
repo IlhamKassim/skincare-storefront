@@ -20,7 +20,7 @@ export default function EnvironmentStep() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold tracking-tight text-center mb-8">
+      <h2 className="font-heading text-2xl font-bold tracking-tight text-center mb-8 text-foreground">
         {t('environment.question')}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -28,13 +28,13 @@ export default function EnvironmentStep() {
           <Card
             key={env}
             className={cn(
-              'cursor-pointer transition-all hover:border-black border-2',
-              environment === env ? 'border-black bg-gray-50' : 'border-transparent'
+              'cursor-pointer transition-all hover:border-primary border-2',
+              environment === env ? 'border-primary bg-secondary/20' : 'border-transparent'
             )}
             onClick={() => handleSelect(env)}
           >
             <CardContent className="p-6 flex items-center justify-center min-h-[80px]">
-              <h3 className="font-bold text-lg text-center">{t(`environment.${env}`)}</h3>
+              <h3 className="font-bold text-lg text-center text-foreground">{t(`environment.${env}`)}</h3>
             </CardContent>
           </Card>
         ))}

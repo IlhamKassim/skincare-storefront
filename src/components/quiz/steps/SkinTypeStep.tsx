@@ -19,7 +19,7 @@ export default function SkinTypeStep() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold tracking-tight text-center mb-8">
+      <h2 className="font-heading text-2xl font-bold tracking-tight text-center mb-8 text-foreground">
         {t('skinType.question')}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -27,14 +27,14 @@ export default function SkinTypeStep() {
           <Card
             key={type}
             className={cn(
-              'cursor-pointer transition-all hover:border-black border-2',
-              skinType === type ? 'border-black bg-gray-50' : 'border-transparent'
+              'cursor-pointer transition-all hover:border-primary border-2',
+              skinType === type ? 'border-primary bg-secondary/20' : 'border-transparent'
             )}
             onClick={() => handleSelect(type)}
           >
             <CardContent className="p-6">
-              <h3 className="font-bold text-lg mb-1">{t(`skinType.${type}`)}</h3>
-              <p className="text-sm text-gray-500">{t(`skinType.${type}Desc`)}</p>
+              <h3 className="font-bold text-lg mb-1 text-foreground">{t(`skinType.${type}`)}</h3>
+              <p className="text-sm text-muted-foreground">{t(`skinType.${type}Desc`)}</p>
             </CardContent>
           </Card>
         ))}

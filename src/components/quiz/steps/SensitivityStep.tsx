@@ -19,7 +19,7 @@ export default function SensitivityStep() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold tracking-tight text-center mb-8">
+      <h2 className="font-heading text-2xl font-bold tracking-tight text-center mb-8 text-foreground">
         {t('sensitivity.question')}
       </h2>
       <div className="grid grid-cols-1 gap-4 max-w-md mx-auto">
@@ -27,13 +27,13 @@ export default function SensitivityStep() {
           <Card
             key={level}
             className={cn(
-              'cursor-pointer transition-all hover:border-black border-2',
-              sensitivity === level ? 'border-black bg-gray-50' : 'border-transparent'
+              'cursor-pointer transition-all hover:border-primary border-2',
+              sensitivity === level ? 'border-primary bg-secondary/20' : 'border-transparent'
             )}
             onClick={() => handleSelect(level)}
           >
             <CardContent className="p-6 flex items-center justify-center min-h-[60px]">
-              <h3 className="font-bold text-lg text-center">{t(`sensitivity.${level}`)}</h3>
+              <h3 className="font-bold text-lg text-center text-foreground">{t(`sensitivity.${level}`)}</h3>
             </CardContent>
           </Card>
         ))}

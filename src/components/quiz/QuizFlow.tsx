@@ -37,8 +37,8 @@ export default function QuizFlow() {
   if (!CurrentStepComponent) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px]">
-        <h2 className="text-2xl font-bold mb-4">Calculating your routine...</h2>
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black"></div>
+        <h2 className="font-heading text-2xl font-bold mb-4 text-foreground">Calculating your routine...</h2>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
       </div>
     );
   }
@@ -57,7 +57,7 @@ export default function QuizFlow() {
             <ChevronLeft className="w-4 h-4" />
             {t('buttons.back')}
           </Button>
-          <span className="text-sm font-medium text-gray-500">
+          <span className="text-sm font-medium text-muted-foreground">
             {currentStep + 1} / {steps.length}
           </span>
         </div>

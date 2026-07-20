@@ -15,10 +15,10 @@ export default function ConcernsStep() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold tracking-tight text-center mb-2">
+      <h2 className="font-heading text-2xl font-bold tracking-tight text-center mb-2 text-foreground">
         {t('concerns.question')}
       </h2>
-      <p className="text-center text-gray-500 mb-8">
+      <p className="text-center text-muted-foreground mb-8">
         {selectedConcerns.length} / 3 selected
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -31,13 +31,13 @@ export default function ConcernsStep() {
               key={concern}
               className={cn(
                 'cursor-pointer transition-all border-2',
-                isSelected ? 'border-black bg-gray-50' : 'border-transparent',
-                isDisabled ? 'opacity-50 cursor-not-allowed' : 'hover:border-black'
+                isSelected ? 'border-primary bg-secondary/20' : 'border-transparent',
+                isDisabled ? 'opacity-50 cursor-not-allowed' : 'hover:border-primary'
               )}
               onClick={() => !isDisabled && toggleConcern(concern)}
             >
               <CardContent className="p-6 flex items-center justify-center min-h-[80px]">
-                <h3 className="font-bold text-lg text-center">{t(`concerns.${concern}`)}</h3>
+                <h3 className="font-bold text-lg text-center text-foreground">{t(`concerns.${concern}`)}</h3>
               </CardContent>
             </Card>
           );

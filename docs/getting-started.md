@@ -1,6 +1,6 @@
 # Getting Started with agent-skills
 
-agent-skills works with any AI coding agent that accepts Markdown instructions. This guide covers the universal approach. For tool-specific setup, see the dedicated guides.
+agent-skills works with any AI coding agent that accepts Markdown instructions. This guide covers the universal approach. This repo is set up for Claude Code specifically (`.claude-plugin/`, `.claude/commands/`); tool-specific setup guides for other agents were removed as unused here.
 
 ## How Skills Work
 

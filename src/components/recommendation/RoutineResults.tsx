@@ -65,8 +65,12 @@ export default function RoutineResults() {
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={product.image_url}
-                alt={`${product.category} icon`}
+                alt={`${product.name} product photo`}
                 className="w-full h-32 object-contain bg-secondary/10 rounded-t-xl"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = `/products/${product.category}.svg`;
+                }}
               />
             )}
             <CardHeader>

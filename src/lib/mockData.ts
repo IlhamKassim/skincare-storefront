@@ -18,7 +18,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntis',
     fallback_url: 'https://shopee.com.my/search?keyword=cosrx%20low%20ph%20cleanser',
-    image_url: '/products/cleanser.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/cn-11134207-820l4-mmgyvpr96n7l69',
   },
   {
     id: '2',
@@ -36,7 +36,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntpo',
     fallback_url: 'https://lazada.com.my/catalog/?q=la%20roche%20posay%20toleriane%20cleanser',
-    image_url: '/products/cleanser.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/sg-11134202-8258k-mq371qic737web',
   },
   {
     id: '3',
@@ -54,7 +54,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntr8',
     fallback_url: 'https://shop.tiktok.com/search?q=anua%20heartleaf%20cleansing%20oil',
-    image_url: '/products/cleanser.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7r98y-lxs5ryyla1d6a6',
   },
 
   // Toners
@@ -74,7 +74,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntre',
     fallback_url: 'https://shop.tiktok.com/search?q=anua%20heartleaf%2077%20toner',
-    image_url: '/products/toner.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-820lc-mfwg6dbd0nilef',
   },
   {
     id: '5',
@@ -92,7 +92,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntjf',
     fallback_url: 'https://shopee.com.my/search?keyword=cosrx%20aha%20bha%20toner',
-    image_url: '/products/toner.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7r98u-llj4ig3ns9rh8c',
   },
   {
     id: '6',
@@ -110,7 +110,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntqd',
     fallback_url: 'https://lazada.com.my/catalog/?q=la%20roche%20posay%20serozinc',
-    image_url: '/products/toner.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/sg-11134207-82603-mjjg84w8qzuu71',
   },
 
   // Serums
@@ -130,7 +130,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntrj',
     fallback_url: 'https://shop.tiktok.com/search?q=anua%20peach%2070%20niacinamide%20serum',
-    image_url: '/products/serum.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7r98y-lm4z64ocd42b65',
   },
   {
     id: '8',
@@ -148,7 +148,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntjg',
     fallback_url: 'https://shopee.com.my/search?keyword=cosrx%20vitamin%20c%2023%20serum',
-    image_url: '/products/serum.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/sg-11134201-7rd4e-m6niee114r9oa0',
   },
   {
     id: '9',
@@ -166,7 +166,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntji',
     fallback_url: 'https://shopee.com.my/search?keyword=skintific%20ceramide%20serum',
-    image_url: '/products/serum.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-820l9-mphu5bsuimfgbb',
   },
 
   // Moisturizers
@@ -186,7 +186,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntrp',
     fallback_url: 'https://shop.tiktok.com/search?q=anua%20ceramide%20panthenol%20barrier%20cream',
-    image_url: '/products/moisturizer.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7rasd-m5u6nu6ylbo309',
   },
   {
     id: '11',
@@ -204,7 +204,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntqn',
     fallback_url: 'https://lazada.com.my/catalog/?q=la%20roche%20posay%20toleriane%20ultra%20creme',
-    image_url: '/products/moisturizer.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7rase-m9jxid23hmwka3',
   },
   {
     id: '12',
@@ -222,7 +222,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntjk',
     fallback_url: 'https://shopee.com.my/search?keyword=cosrx%20oil%20free%20lotion',
-    image_url: '/products/moisturizer.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/cn-11134207-820l4-mld93ijqszcx97',
   },
 
   // Sunscreens
@@ -242,7 +242,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntjl',
     fallback_url: 'https://shopee.com.my/search?keyword=beauty%20of%20joseon%20relief%20sun',
-    image_url: '/products/sunscreen.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/cn-11134207-820l4-mpyxd1h1337l16',
   },
   {
     id: '14',
@@ -260,7 +260,7 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntqw',
     fallback_url: 'https://lazada.com.my/catalog/?q=la%20roche%20posay%20anthelios%20uvmune',
-    image_url: '/products/sunscreen.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/cn-11134207-820l4-mq4mn1r7u6ma88',
   },
   {
     id: '15',
@@ -278,6 +278,6 @@ export const MOCK_PRODUCTS: Product[] = [
     affiliate_platform: 'Shopee',
     affiliate_url: 'https://invl.me/clnntrq',
     fallback_url: 'https://shop.tiktok.com/search?q=cosrx%20aloe%20soothing%20sun%20cream',
-    image_url: '/products/sunscreen.svg',
+    image_url: 'https://down-my.img.susercontent.com/file/my-11134207-7r98z-llj456bcxf8tc0',
   },
 ];

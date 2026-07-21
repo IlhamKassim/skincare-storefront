@@ -25,6 +25,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SkinSync | Curated Skincare Routine",
   description: "Personalized skincare routines for the Malaysian market.",
+  verification: {
+    google: "uasgejZ33_WcX1uXn8TthQayfIgG4IfLuvVV0b4pTUA",
+  },
 };
 
 export function generateStaticParams() {

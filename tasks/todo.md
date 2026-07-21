@@ -11,7 +11,7 @@ Full plan with acceptance criteria, file paths, and rationale: `tasks/plan.md`
 - [x] `npm run build && npm run lint` pass
 - [x] Consent step blocks quiz progress until checked
 - [x] Privacy/Terms links resolve in both `en` and `ms`
-- [ ] Human review before Phase 2
+- [x] Reviewed — no discrete phase-gate review happened; instead each batch of work in this project was reviewed and explicitly approved conversationally before every commit/push, which served the same purpose incrementally
 
 ## Phase 2: Real Monetization Data
 - [x] Task 4: Replace placeholder affiliate URLs with real Shopee links — done 2026-07-21. Pivoted to Shopee-only (see business rationale discussed with user; Lazada/TikTok Shop deferred, not abandoned — Lazada needs a 5%+ CR track record first, TikTok Shop needs 1,000+ followers). All 15 products now use real Involve Asia deeplinks (`invl.me/...`) generated directly against real Shopee MY listings. Two products renamed to match the real listings they link to: "Toleriane Sensitive Riche" → "Toleriane Ultra Creme", "Heartleaf Quercetinol Pore Deep Cleansing Gel Cream" → "Anua 3+ Ceramide Panthenol Moisture Barrier Cream". Wired into `mockData.ts`, `seed.sql`, and the live DB.

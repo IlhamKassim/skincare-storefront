@@ -2,7 +2,10 @@
   "HomePage": {
     "title": "Your Skin, Synced.",
     "description": "Localized skincare routines tailored for the Malaysian climate and your unique skin concerns.",
-    "cta": "Take the Skin Quiz"
+    "cta": "Take the Skin Quiz",
+    "aboutTeaserTitle": "An independent project, built for Malaysian skin",
+    "aboutTeaserBody": "SkinSync isn't run by a marketplace or a brand — it's an independent tool that scores products against your skin type, concerns, and Malaysia's climate, then points you to where to buy them.",
+    "aboutTeaserLink": "Learn more about SkinSync"
   },
   "Header": {
     "quiz": "Skin Quiz",
@@ -11,7 +14,19 @@
   "Footer": {
     "about": "Expertly curated skincare routines for the modern Malaysian, powered by science and local knowledge.",
     "links": "Quick Links",
+    "aboutLink": "About",
     "location": "Location"
+  },
+  "About": {
+    "title": "About SkinSync",
+    "missionTitle": "What SkinSync is",
+    "missionBody": "SkinSync is an independent skincare diagnostic tool built for the Malaysian market. Answer a few questions about your skin type, concerns, and daily environment, and SkinSync scores a real product catalog against Malaysia's climate — humidity, heat, and air-conditioning — to recommend a routine suited to your skin, not a generic one built for a different climate.",
+    "howTitle": "How it works",
+    "howBody": "The quiz feeds your answers into a scoring engine that weighs climate fit, your specific concerns, and ingredient matches, while excluding anything unsuitable for your sensitivity level. Each recommended product links out to where you can actually buy it — Shopee, Lazada, or TikTok Shop — so you can complete the purchase on the platform you already use.",
+    "independenceTitle": "Independent, not a marketplace store",
+    "independenceBody": "SkinSync is a standalone project — it is not operated by, affiliated with, or a storefront within Shopee, Lazada, or TikTok Shop. Product links are disclosed affiliate links: SkinSync may earn a commission on qualifying purchases at no extra cost to you. Full details are in the Terms of Service.",
+    "contactTitle": "Contact",
+    "contactBody": "Questions, feedback, or partnership inquiries — reach out at hello@skinsync.example."
   },
   "Consent": {
     "title": "Before we start",

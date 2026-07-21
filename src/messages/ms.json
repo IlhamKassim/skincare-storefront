@@ -2,7 +2,10 @@
   "HomePage": {
     "title": "Kulit Anda, Diselaraskan.",
     "description": "Rutin penjagaan kulit tempatan yang disesuaikan untuk iklim Malaysia dan masalah kulit unik anda.",
-    "cta": "Ambil Kuiz Kulit"
+    "cta": "Ambil Kuiz Kulit",
+    "aboutTeaserTitle": "Projek bebas, dibina untuk kulit rakyat Malaysia",
+    "aboutTeaserBody": "SkinSync bukan dikendalikan oleh mana-mana pasaran atau jenama — ia adalah alat bebas yang menilai produk berdasarkan jenis kulit, masalah, dan iklim Malaysia anda, kemudian menunjukkan di mana untuk membelinya.",
+    "aboutTeaserLink": "Ketahui lebih lanjut tentang SkinSync"
   },
   "Header": {
     "quiz": "Kuiz Kulit",
@@ -11,7 +14,19 @@
   "Footer": {
     "about": "Rutin penjagaan kulit yang disusun secara pakar untuk rakyat Malaysia moden, dikuasakan oleh sains dan pengetahuan tempatan.",
     "links": "Pautan Pantas",
+    "aboutLink": "Tentang Kami",
     "location": "Lokasi"
+  },
+  "About": {
+    "title": "Tentang SkinSync",
+    "missionTitle": "Apa itu SkinSync",
+    "missionBody": "SkinSync ialah alat diagnostik penjagaan kulit bebas yang dibina untuk pasaran Malaysia. Jawab beberapa soalan tentang jenis kulit, masalah, dan persekitaran harian anda, dan SkinSync menilai katalog produk sebenar berdasarkan iklim Malaysia — kelembapan, haba, dan hawa dingin — untuk mencadangkan rutin yang sesuai dengan kulit anda, bukan rutin generik yang dibina untuk iklim lain.",
+    "howTitle": "Cara ia berfungsi",
+    "howBody": "Kuiz ini menyalurkan jawapan anda ke dalam enjin penilaian yang menimbang kesesuaian iklim, masalah spesifik anda, dan padanan bahan aktif, sambil mengecualikan apa-apa yang tidak sesuai untuk tahap sensitiviti anda. Setiap produk yang disyorkan memaut ke tempat anda boleh membelinya — Shopee, Lazada, atau TikTok Shop — supaya anda boleh melengkapkan pembelian di platform yang anda sudah gunakan.",
+    "independenceTitle": "Bebas, bukan kedai pasaran",
+    "independenceBody": "SkinSync adalah projek bebas — ia tidak dikendalikan oleh, bergabung dengan, atau menjadi kedai dalam Shopee, Lazada, atau TikTok Shop. Pautan produk adalah pautan gabungan (affiliate) yang didedahkan: SkinSync mungkin memperoleh komisen daripada pembelian yang layak tanpa sebarang kos tambahan kepada anda. Butiran lengkap terdapat dalam Terma Perkhidmatan.",
+    "contactTitle": "Hubungi",
+    "contactBody": "Soalan, maklum balas, atau pertanyaan kerjasama — hubungi kami di hello@skinsync.example."
   },
   "Consent": {
     "title": "Sebelum kita mula",

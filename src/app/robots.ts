@@ -1,14 +1,13 @@
 import type { MetadataRoute } from 'next';
-
-const BASE_URL = 'https://skinsync-mvp.vercel.app';
+import { SITE_URL } from '@/lib/siteConfig';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/dashboard', '/auth', '/api'],
+      disallow: ['/dashboard', '/auth', '/api', '/results'],
     },
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

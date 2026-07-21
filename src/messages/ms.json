@@ -21,12 +21,54 @@
     "title": "Tentang SkinSync",
     "missionTitle": "Apa itu SkinSync",
     "missionBody": "SkinSync ialah alat diagnostik penjagaan kulit bebas yang dibina untuk pasaran Malaysia. Jawab beberapa soalan tentang jenis kulit, masalah, dan persekitaran harian anda, dan SkinSync menilai katalog produk sebenar berdasarkan iklim Malaysia — kelembapan, haba, dan hawa dingin — untuk mencadangkan rutin yang sesuai dengan kulit anda, bukan rutin generik yang dibina untuk iklim lain.",
+    "climateTitle": "Kenapa iklim Malaysia memerlukan pendekatan berbeza",
+    "climateBody": "Kebanyakan panduan penjagaan kulit ditulis untuk iklim sederhana, di mana risiko utama adalah produk yang terlalu ringan. Malaysia menghadapi masalah sebaliknya: kelembapan dan haba yang tinggi mendorong kulit ke arah minyak berlebihan dan liang pori tersumbat, manakala pergerakan antara panas luar dan ruang berhawa dingin berulang kali mengeringkan dan melembapkan semula lapisan pelindung kulit dalam hari yang sama. Krim berat dan oklusif yang berkesan dalam iklim sejuk dan kering boleh memerangkap peluh dan sebum di sini, menjadikan jerawat lebih teruk, bukan lebih baik. Enjin penilaian SkinSync menganggap iklim sebagai input utama, bukan pertimbangan sampingan — mengutamakan formula gel ringan dan tidak menyumbat pori untuk persekitaran lembap dan tropika, dan hanya mencadangkan krim lebih kaya yang membaiki lapisan pelindung untuk keadaan yang benar-benar kering atau berhawa dingin sepenuhnya.",
     "howTitle": "Cara ia berfungsi",
     "howBody": "Kuiz ini menyalurkan jawapan anda ke dalam enjin penilaian yang menimbang kesesuaian iklim, masalah spesifik anda, dan padanan bahan aktif, sambil mengecualikan apa-apa yang tidak sesuai untuk tahap sensitiviti anda. Setiap produk yang disyorkan memaut ke tempat anda boleh membelinya di Shopee, supaya anda boleh melengkapkan pembelian di sana.",
     "independenceTitle": "Bebas, bukan kedai pasaran",
     "independenceBody": "SkinSync adalah projek bebas — ia tidak dikendalikan oleh, bergabung dengan, atau menjadi kedai dalam Shopee, Lazada, atau TikTok Shop. Pautan produk adalah pautan gabungan (affiliate) yang didedahkan: SkinSync mungkin memperoleh komisen daripada pembelian yang layak tanpa sebarang kos tambahan kepada anda. Butiran lengkap terdapat dalam Terma Perkhidmatan.",
+    "faqTitle": "Soalan lazim",
+    "faq": {
+      "marketplace": {
+        "question": "Adakah SkinSync sebuah pasaran atau kedai?",
+        "answer": "Tidak. SkinSync tidak menjual apa-apa secara langsung — ia adalah alat diagnostik bebas yang menilai produk sebenar dan memaut anda ke tempat untuk membelinya, pada masa ini Shopee."
+      },
+      "scoring": {
+        "question": "Bagaimana penilaian sesuai iklim berfungsi?",
+        "answer": "Jawapan kuiz anda (jenis kulit, masalah, persekitaran, sensitiviti) dinilai berdasarkan iklim Malaysia — kelembapan, haba, dan hawa dingin — untuk mengecualikan produk tidak sesuai dan mengutamakan yang sesuai."
+      },
+      "cost": {
+        "question": "Adakah saya membayar lebih dengan mengklik pautan SkinSync?",
+        "answer": "Tidak. SkinSync mungkin memperoleh komisen daripada pembelian yang layak, tetapi ini tidak menambah kos kepada anda — harga adalah sama seperti terus ke Shopee."
+      }
+    },
     "contactTitle": "Hubungi",
     "contactBody": "Soalan, maklum balas, atau pertanyaan kerjasama — hubungi kami di hello@skinsync.example."
+  },
+  "Meta": {
+    "home": {
+      "title": "SkinSync — Kuiz Kulit Percuma untuk Iklim Malaysia | Rutin Penjagaan Kulit Peribadi",
+      "description": "Ambil kuiz kulit percuma yang direka untuk iklim Malaysia. Dapatkan rutin peribadi berdasarkan jenis kulit, masalah, dan kelembapan anda — terus beli di Shopee."
+    },
+    "quiz": {
+      "title": "Ambil Kuiz Kulit — Rutin Sesuai Iklim Anda | SkinSync",
+      "description": "4 soalan ringkas tentang jenis kulit, masalah, persekitaran, dan sensitiviti anda. Dapatkan rutin sesuai cuaca panas dan lembap Malaysia dalam masa kurang 2 minit."
+    },
+    "about": {
+      "title": "Tentang SkinSync — Alat Diagnostik Bebas, Bukan Pasaran",
+      "description": "SkinSync ialah alat bebas, bukan jenama atau pasaran. Ketahui cara enjin penilaian sesuai iklim berfungsi dan ketelusan kami tentang pautan gabungan."
+    },
+    "privacy": {
+      "title": "Dasar Privasi | SkinSync",
+      "description": "Cara SkinSync mengumpul, menggunakan, dan melindungi data kuiz kulit anda di bawah PDPA Malaysia."
+    },
+    "terms": {
+      "title": "Terma Perkhidmatan | SkinSync",
+      "description": "Terma penggunaan kuiz penjagaan kulit SkinSync dan pendedahan gabungan untuk cadangan produk."
+    },
+    "results": {
+      "title": "Rutin Peribadi Anda | SkinSync"
+    }
   },
   "Consent": {
     "title": "Sebelum kita mula",

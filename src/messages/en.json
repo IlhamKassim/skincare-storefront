@@ -21,12 +21,54 @@
     "title": "About SkinSync",
     "missionTitle": "What SkinSync is",
     "missionBody": "SkinSync is an independent skincare diagnostic tool built for the Malaysian market. Answer a few questions about your skin type, concerns, and daily environment, and SkinSync scores a real product catalog against Malaysia's climate — humidity, heat, and air-conditioning — to recommend a routine suited to your skin, not a generic one built for a different climate.",
+    "climateTitle": "Why Malaysia's climate needs a different approach",
+    "climateBody": "Most skincare advice is written for temperate climates, where the biggest risk is a product being too light. Malaysia is the opposite problem: high humidity and heat push skin toward excess oil and clogged pores, while hopping between outdoor heat and air-conditioned interiors repeatedly dries out and re-hydrates the skin barrier in the same day. Heavy, occlusive creams that work well in cold, dry climates can trap sweat and sebum here, making breakouts worse rather than better. SkinSync's scoring engine treats climate as a first-class input, not an afterthought — prioritizing lightweight, non-comedogenic, gel-based formulas for humid and tropical environments, and only recommending richer, barrier-repairing creams for genuinely dry or heavily air-conditioned conditions.",
     "howTitle": "How it works",
     "howBody": "The quiz feeds your answers into a scoring engine that weighs climate fit, your specific concerns, and ingredient matches, while excluding anything unsuitable for your sensitivity level. Each recommended product links out to where you can actually buy it on Shopee, so you can complete the purchase there.",
     "independenceTitle": "Independent, not a marketplace store",
     "independenceBody": "SkinSync is a standalone project — it is not operated by, affiliated with, or a storefront within Shopee, Lazada, or TikTok Shop. Product links are disclosed affiliate links: SkinSync may earn a commission on qualifying purchases at no extra cost to you. Full details are in the Terms of Service.",
+    "faqTitle": "Common questions",
+    "faq": {
+      "marketplace": {
+        "question": "Is SkinSync a marketplace or store?",
+        "answer": "No. SkinSync doesn't sell anything directly — it's an independent diagnostic tool that scores real products and links you to where you can buy them, currently Shopee."
+      },
+      "scoring": {
+        "question": "How does the climate-aware scoring work?",
+        "answer": "Your quiz answers (skin type, concerns, environment, sensitivity) are weighed against Malaysia's climate — humidity, heat, and air-conditioning — to exclude unsuitable products and prioritize the ones that fit."
+      },
+      "cost": {
+        "question": "Do I pay more by clicking through SkinSync's links?",
+        "answer": "No. SkinSync may earn a commission on qualifying purchases, but this comes at no extra cost to you — the price is the same as if you went directly to Shopee."
+      }
+    },
     "contactTitle": "Contact",
     "contactBody": "Questions, feedback, or partnership inquiries — reach out at hello@skinsync.example."
+  },
+  "Meta": {
+    "home": {
+      "title": "SkinSync — Free Skin Quiz for Malaysia's Climate | Personalized Skincare Routine",
+      "description": "Take a free skin quiz built for Malaysia's climate. Get a personalized routine matched to your skin type, concerns, and humidity — then shop it on Shopee."
+    },
+    "quiz": {
+      "title": "Take the Skin Quiz — Climate-Matched Skincare Routine | SkinSync",
+      "description": "4 quick questions about your skin type, concerns, environment, and sensitivity. Get a routine built for Malaysia's heat and humidity in under 2 minutes."
+    },
+    "about": {
+      "title": "About SkinSync — Independent Skincare Diagnostic, Not a Marketplace",
+      "description": "SkinSync is an independent tool, not a brand or marketplace. See how the climate-aware scoring engine works and why we're transparent about affiliate links."
+    },
+    "privacy": {
+      "title": "Privacy Policy | SkinSync",
+      "description": "How SkinSync collects, uses, and protects your skin quiz data under Malaysia's PDPA."
+    },
+    "terms": {
+      "title": "Terms of Service | SkinSync",
+      "description": "Terms of use for SkinSync's skincare quiz and affiliate disclosure for product recommendations."
+    },
+    "results": {
+      "title": "Your Personalized Routine | SkinSync"
+    }
   },
   "Consent": {
     "title": "Before we start",

@@ -6,6 +6,7 @@ import {getMessages, setRequestLocale} from 'next-intl/server';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {routing} from '@/i18n/routing';
+import {SITE_URL} from '@/lib/siteConfig';
 
 const rubik = Rubik({
   variable: "--font-heading",
@@ -23,6 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "SkinSync | Curated Skincare Routine",
   description: "Personalized skincare routines for the Malaysian market.",
   verification: {
@@ -48,11 +50,34 @@ export default async function RootLayout({
   
   const messages = await getMessages();
 
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'SkinSync',
+    url: SITE_URL,
+    description: 'Independent, climate-aware skincare diagnostic quiz for the Malaysian market.',
+  };
+
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'SkinSync',
+    url: SITE_URL,
+  };
+
   return (
     <html lang={locale}>
       <body
         className={`${rubik.variable} ${nunitoSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col font-sans`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(organizationJsonLd)}}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: JSON.stringify(websiteJsonLd)}}
+        />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />
           <main className="flex-grow">

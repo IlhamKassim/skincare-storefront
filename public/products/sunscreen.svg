@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sunscreen">
+  <circle cx="100" cy="100" r="100" fill="#FDF2F8"/>
+  <rect x="80" y="44" width="40" height="16" rx="4" fill="#7C3AED"/>
+  <path d="M76 60h48c4 0 6 3 6 6v82c0 6-5 10-10 10H80c-5 0-10-4-10-10V66c0-3 2-6 6-6z" fill="#FFFFFF" stroke="#DB2777" stroke-width="4"/>
+  <rect x="70" y="60" width="60" height="24" rx="4" fill="#F9A8D4"/>
+  <circle cx="100" cy="128" r="18" fill="#FEF3C7"/>
+  <circle cx="100" cy="128" r="10" fill="#DB2777"/>
+  <g stroke="#DB2777" stroke-width="3" stroke-linecap="round">
+    <line x1="100" y1="102" x2="100" y2="108"/>
+    <line x1="100" y1="148" x2="100" y2="154"/>
+    <line x1="74" y1="128" x2="80" y2="128"/>
+    <line x1="120" y1="128" x2="126" y2="128"/>
+    <line x1="82" y1="110" x2="86" y2="114"/>
+    <line x1="114" y1="142" x2="118" y2="146"/>
+    <line x1="118" y1="110" x2="114" y2="114"/>
+    <line x1="86" y1="142" x2="82" y2="146"/>
+  </g>
+</svg>

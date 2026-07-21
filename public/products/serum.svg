@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Serum">
+  <circle cx="100" cy="100" r="100" fill="#FDF2F8"/>
+  <rect x="86" y="42" width="28" height="18" rx="3" fill="#7C3AED"/>
+  <path d="M78 60h44c3 0 5 2 5 5v14c0 3-1 5-3 7l-7 7c-2 2-3 4-3 7v54c0 8-6 14-14 14s-14-6-14-14v-54c0-3-1-5-3-7l-7-7c-2-2-3-4-3-7V65c0-3 2-5 5-5z" fill="#FFFFFF" stroke="#DB2777" stroke-width="4"/>
+  <rect x="86" y="110" width="28" height="42" rx="3" fill="#F9A8D4"/>
+</svg>

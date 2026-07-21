@@ -13,6 +13,74 @@
     "links": "Pautan Pantas",
     "location": "Lokasi"
   },
+  "Consent": {
+    "title": "Sebelum kita mula",
+    "intro": "Untuk membina rutin peribadi anda, kami perlu mengumpul beberapa maklumat tentang kulit anda.",
+    "whatTitle": "Apa yang kami kumpul",
+    "what": "Jenis kulit, masalah kulit utama, persekitaran harian, dan tahap sensitiviti anda.",
+    "whyTitle": "Kenapa kami mengumpulnya",
+    "why": "Ini digunakan semata-mata untuk menilai dan mencadangkan rutin penjagaan kulit yang sesuai dengan kulit anda dan iklim Malaysia.",
+    "storageTitle": "Di mana ia disimpan",
+    "storage": "Jawapan anda disimpan dengan selamat dalam pangkalan data kami (Supabase). Kami tidak menjual data ini, dan ia hanya dikongsi dengan pasaran sebagai klik tanpa nama apabila anda memilih untuk membeli produk yang disyorkan — bukan jawapan kuiz anda.",
+    "retentionTitle": "Berapa lama kami simpan",
+    "retention": "Sehingga anda memadam akaun anda atau meminta kami membuangnya. Lihat Dasar Privasi kami untuk butiran lengkap.",
+    "checkboxLabel": "Saya telah membaca <privacyLink>Dasar Privasi</privacyLink> dan bersetuju SkinSync mengumpul serta menyimpan maklumat jenis kulit, masalah, persekitaran, dan sensitiviti saya untuk menjana rutin saya.",
+    "continue": "Teruskan"
+  },
+  "Privacy": {
+    "title": "Dasar Privasi",
+    "updated": "Terakhir dikemas kini: 20 Julai 2026",
+    "intro": "SkinSync (\"kami\") menyediakan kuiz diagnostik penjagaan kulit untuk pasaran Malaysia. Dasar ini menerangkan data peribadi yang kami kumpul, sebabnya, dan cara ia dikendalikan, selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) Malaysia.",
+    "whatSection": {
+      "title": "Apa yang kami kumpul",
+      "body": "Apabila anda mengambil Kuiz Kulit, kami mengumpul jenis kulit, masalah kulit utama, persekitaran harian biasa, dan tahap sensitiviti kulit anda. Di bawah PDPA, maklumat tentang keadaan kulit anda dianggap sebagai data peribadi sensitif, itulah sebabnya kami meminta kebenaran nyata anda sebelum mengumpulnya. Jika anda mencipta akaun, kami juga mengumpul alamat emel anda untuk pengesahan."
+    },
+    "whySection": {
+      "title": "Kenapa kami mengumpulnya",
+      "body": "Kami menggunakan jawapan kuiz anda semata-mata untuk menilai dan mencadangkan rutin penjagaan kulit yang sesuai dengan jenis kulit, masalah, dan iklim Malaysia. Jika anda log masuk, kami menyimpan keputusan kuiz anda supaya anda boleh melihatnya semula dari papan pemuka anda."
+    },
+    "storageSection": {
+      "title": "Cara ia disimpan dan siapa yang mempunyai akses",
+      "body": "Data anda disimpan bersama Supabase, penyedia pangkalan data kami, yang bertindak sebagai pemproses data bagi pihak kami. Kami tidak menjual data peribadi anda. Apabila anda klik untuk membeli produk yang disyorkan, kami merekodkan produk dan pasaran (Shopee, Lazada, atau TikTok Shop) yang anda klik — bukan jawapan kuiz anda — supaya kami dapat mengukur cadangan yang berguna."
+    },
+    "retentionSection": {
+      "title": "Berapa lama kami simpan",
+      "body": "Kami menyimpan jawapan kuiz dan data akaun anda sehingga anda memadam akaun anda atau menghubungi kami untuk meminta ia dibuang."
+    },
+    "rightsSection": {
+      "title": "Hak anda",
+      "body": "Di bawah PDPA, anda boleh meminta akses kepada, pembetulan, atau pemadaman data peribadi anda pada bila-bila masa dengan menghubungi kami menggunakan butiran di bawah."
+    },
+    "contactSection": {
+      "title": "Hubungi kami",
+      "body": "Untuk sebarang soalan mengenai dasar ini atau data anda, hubungi kami di privacy@skinsync.example."
+    }
+  },
+  "Terms": {
+    "title": "Terma Perkhidmatan",
+    "updated": "Terakhir dikemas kini: 20 Julai 2026",
+    "intro": "Dengan menggunakan SkinSync, anda bersetuju dengan terma ini.",
+    "serviceSection": {
+      "title": "Perkhidmatan",
+      "body": "SkinSync menyediakan kuiz diagnostik penjagaan kulit dan cadangan rutin untuk tujuan maklumat sahaja. Kami bukan penyedia perubatan, dan cadangan kami bukan nasihat perubatan — rujuk pakar dermatologi untuk keadaan kulit yang memerlukan rawatan profesional."
+    },
+    "affiliateSection": {
+      "title": "Iklan / Pendedahan Gabungan",
+      "body": "Cadangan produk SkinSync memaut ke pasaran pihak ketiga — Shopee, Lazada, dan TikTok Shop. Ini adalah pautan gabungan (affiliate): SkinSync mungkin memperoleh komisen daripada pembelian yang layak melalui pautan ini, tanpa sebarang kos tambahan kepada anda. Ini adalah susunan berbayar berasaskan komisen dan harus dianggap sebagai iklan."
+    },
+    "accountSection": {
+      "title": "Akaun",
+      "body": "Anda bertanggungjawab untuk mengekalkan kerahsiaan kelayakan akaun anda dan untuk semua aktiviti di bawah akaun anda."
+    },
+    "liabilitySection": {
+      "title": "Had liabiliti",
+      "body": "Cadangan SkinSync disediakan \"seadanya\" tanpa jaminan. Kami tidak bertanggungjawab atas reaksi kepada, atau hasil daripada, produk yang dibeli melalui cadangan kami."
+    },
+    "contactSection": {
+      "title": "Hubungi kami",
+      "body": "Untuk sebarang soalan mengenai terma ini, hubungi kami di hello@skinsync.example."
+    }
+  },
   "Quiz": {
     "steps": {
       "skinType": "Jenis Kulit",
@@ -77,6 +145,7 @@
     "title": "Rutin Peribadi Anda",
     "shopOn": "Beli di {platform}",
     "checkoutTitle": "Bersedia untuk membeli rutin anda?",
-    "affiliateDisclaimer": "SkinSync memaut ke peruncit dipercayai seperti Shopee, Lazada, dan TikTok Shop. Kami mungkin memperoleh komisen daripada pembelian yang layak, tanpa sebarang kos tambahan kepada anda."
+    "affiliateDisclaimerLabel": "Iklan",
+    "affiliateDisclaimer": "Pautan produk di bawah membawa anda ke Shopee, Lazada, dan TikTok Shop. SkinSync mungkin memperoleh komisen daripada pembelian yang layak, tanpa sebarang kos tambahan kepada anda."
   }
 }

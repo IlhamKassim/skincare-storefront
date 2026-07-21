@@ -12,6 +12,8 @@ export interface QuizState {
   environment: Environment | null;
   sensitivity: SensitivityLevel | null;
   currentStep: number;
+  hasConsented: boolean;
+  consentedAt: string | null;
 }
 
 export interface QuizActions {
@@ -22,5 +24,6 @@ export interface QuizActions {
   setSensitivity: (level: SensitivityLevel) => void;
   nextStep: () => void;
   prevStep: () => void;
+  giveConsent: () => void;
   resetQuiz: () => void;
 }

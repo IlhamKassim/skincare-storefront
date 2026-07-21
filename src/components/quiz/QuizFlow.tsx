@@ -11,6 +11,7 @@ import SkinTypeStep from './steps/SkinTypeStep';
 import ConcernsStep from './steps/ConcernsStep';
 import EnvironmentStep from './steps/EnvironmentStep';
 import SensitivityStep from './steps/SensitivityStep';
+import ConsentStep from './ConsentStep';
 import { ChevronLeft } from 'lucide-react';
 
 const steps = [
@@ -23,16 +24,20 @@ const steps = [
 export default function QuizFlow() {
   const t = useTranslations('Quiz');
   const router = useRouter();
-  const { currentStep, prevStep } = useQuizStore();
+  const { currentStep, prevStep, hasConsented } = useQuizStore();
 
   const CurrentStepComponent = steps[currentStep]?.component;
   const progress = ((currentStep + 1) / steps.length) * 100;
 
   useEffect(() => {
-    if (!CurrentStepComponent) {
+    if (hasConsented && !CurrentStepComponent) {
       router.push('/results');
     }
-  }, [CurrentStepComponent, router]);
+  }, [hasConsented, CurrentStepComponent, router]);
+
+  if (!hasConsented) {
+    return <ConsentStep />;
+  }
 
   if (!CurrentStepComponent) {
     return (

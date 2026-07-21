@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import {Link} from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -15,8 +16,8 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-semibold mb-4 uppercase tracking-wider text-foreground">{t('links')}</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
+            <li><Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link></li>
             <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
           </ul>
         </div>

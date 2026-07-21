@@ -11,6 +11,15 @@ const HUMID_CLIMATE_PRIORITY_ACTIVES = ['niacinamide', 'vitamin c'];
 
 export type AffiliatePlatform = 'Shopee' | 'Lazada' | 'TikTok Shop';
 
+// Tie-breaker only: TikTok Shop pays the highest Malaysian beauty commission (15-30%)
+// and now leads local marketplace traffic. Kept below the smallest real scoring
+// increment (1 point, from a single concern match) so it never overrides skin fit.
+const PLATFORM_TIEBREAK_BONUS: Record<AffiliatePlatform, number> = {
+  'TikTok Shop': 0.5,
+  Shopee: 0,
+  Lazada: 0,
+};
+
 export interface Product {
   id: string;
   name: string;
@@ -32,7 +41,9 @@ export interface Product {
 
 import { MOCK_PRODUCTS } from '@/lib/mockData';
 
-export async function getRecommendedRoutine(quizPayload: QuizState) {
+type RoutineQuizInput = Pick<QuizState, 'skinType' | 'concerns' | 'environment' | 'sensitivity'>;
+
+export async function getRecommendedRoutine(quizPayload: RoutineQuizInput) {
   let products: Product[] = [];
 
   // Demo Mode: Use mock data if Supabase keys are missing or invalid
@@ -87,7 +98,9 @@ export async function getRecommendedRoutine(quizPayload: QuizState) {
         ? 2
         : 0;
 
-      return { product: p, score: climateScore + concernScore + activeScore };
+      const platformScore = PLATFORM_TIEBREAK_BONUS[p.affiliate_platform];
+
+      return { product: p, score: climateScore + concernScore + activeScore + platformScore };
     });
 
     // Sort by score and pick the best one
@@ -104,4 +117,49 @@ export async function getRecommendedRoutine(quizPayload: QuizState) {
   }
 
   return routine;
+}
+
+type QuizAnswers = Pick<
+  QuizState,
+  'skinType' | 'concerns' | 'environment' | 'sensitivity' | 'hasConsented' | 'consentedAt'
+>;
+
+/**
+ * Persists a completed quiz + its recommended routine to `quiz_results`.
+ * RLS on that table only allows authenticated inserts, so anonymous quiz-takers
+ * simply don't get a saved row (returns null) — this is expected, not an error.
+ */
+export async function saveQuizResult(
+  answers: QuizAnswers,
+  routine: Product[]
+): Promise<string | null> {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'your-supabase-url') {
+    return null;
+  }
+
+  try {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return null;
+
+    const { data, error } = await supabase
+      .from('quiz_results')
+      .insert({
+        user_id: user.id,
+        answers,
+        recommended_routine: routine,
+      })
+      .select('id')
+      .single();
+
+    if (error || !data) {
+      console.error('Failed to save quiz result:', error);
+      return null;
+    }
+
+    return (data as { id: string }).id;
+  } catch (error) {
+    console.error('Failed to save quiz result:', error);
+    return null;
+  }
 }

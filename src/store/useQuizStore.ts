@@ -8,6 +8,8 @@ const initialState: QuizState = {
   environment: null,
   sensitivity: null,
   currentStep: 0,
+  hasConsented: false,
+  consentedAt: null,
 };
 
 export const useQuizStore = create<QuizState & QuizActions>()(
@@ -36,7 +38,13 @@ export const useQuizStore = create<QuizState & QuizActions>()(
 
       prevStep: () => set((state) => ({ currentStep: Math.max(0, state.currentStep - 1) })),
 
-      resetQuiz: () => set(initialState),
+      giveConsent: () => set({ hasConsented: true, consentedAt: new Date().toISOString() }),
+
+      resetQuiz: () => set((state) => ({
+        ...initialState,
+        hasConsented: state.hasConsented,
+        consentedAt: state.consentedAt,
+      })),
     }),
     {
       name: 'skinsync-quiz-storage',

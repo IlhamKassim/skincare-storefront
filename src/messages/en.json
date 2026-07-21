@@ -13,6 +13,74 @@
     "links": "Quick Links",
     "location": "Location"
   },
+  "Consent": {
+    "title": "Before we start",
+    "intro": "To build your personalized routine, we need to collect a few details about your skin.",
+    "whatTitle": "What we collect",
+    "what": "Your skin type, primary skin concerns, daily environment, and sensitivity level.",
+    "whyTitle": "Why we collect it",
+    "why": "This is used only to score and recommend a skincare routine matched to your skin and Malaysia's climate.",
+    "storageTitle": "Where it's stored",
+    "storage": "Your answers are stored securely in our database (Supabase). We don't sell this data, and it's shared with marketplaces only as an anonymous click when you choose to shop a recommended product — never your quiz answers.",
+    "retentionTitle": "How long we keep it",
+    "retention": "Until you delete your account or ask us to remove it. See our Privacy Policy for full details.",
+    "checkboxLabel": "I've read the <privacyLink>Privacy Policy</privacyLink> and agree to SkinSync collecting and storing my skin type, concerns, environment, and sensitivity information to generate my routine.",
+    "continue": "Continue"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: 20 July 2026",
+    "intro": "SkinSync (\"we\") provides a skincare diagnostic quiz for the Malaysian market. This policy explains what personal data we collect, why, and how it's handled, in line with Malaysia's Personal Data Protection Act 2010 (PDPA).",
+    "whatSection": {
+      "title": "What we collect",
+      "body": "When you take the Skin Quiz, we collect your skin type, primary skin concerns, typical daily environment, and skin sensitivity level. Under the PDPA, information about your skin condition is treated as sensitive personal data, which is why we ask for your explicit consent before collecting it. If you create an account, we also collect your email address for authentication."
+    },
+    "whySection": {
+      "title": "Why we collect it",
+      "body": "We use your quiz answers solely to score and recommend a skincare routine suited to your skin type, concerns, and Malaysia's climate. If you're signed in, we save your quiz results so you can view them again from your dashboard."
+    },
+    "storageSection": {
+      "title": "How it's stored and who has access",
+      "body": "Your data is stored with Supabase, our database provider, which acts as a data processor on our behalf. We do not sell your personal data. When you click through to shop a recommended product, we record which product and marketplace (Shopee, Lazada, or TikTok Shop) you clicked — not your quiz answers — so we can measure which recommendations are useful."
+    },
+    "retentionSection": {
+      "title": "How long we keep it",
+      "body": "We retain your quiz answers and account data until you delete your account or contact us to request removal."
+    },
+    "rightsSection": {
+      "title": "Your rights",
+      "body": "Under the PDPA, you may request access to, correction of, or deletion of your personal data at any time by contacting us using the details below."
+    },
+    "contactSection": {
+      "title": "Contact us",
+      "body": "For any questions about this policy or your data, contact us at privacy@skinsync.example."
+    }
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "updated": "Last updated: 20 July 2026",
+    "intro": "By using SkinSync, you agree to these terms.",
+    "serviceSection": {
+      "title": "The service",
+      "body": "SkinSync provides a skincare diagnostic quiz and routine recommendations for informational purposes. We are not a medical provider, and our recommendations are not medical advice — consult a dermatologist for skin conditions requiring professional care."
+    },
+    "affiliateSection": {
+      "title": "Advertisement / Affiliate disclosure",
+      "body": "SkinSync's product recommendations link to third-party marketplaces — Shopee, Lazada, and TikTok Shop. These are affiliate links: SkinSync may earn a commission on qualifying purchases made through them, at no extra cost to you. This is a paid, commission-based arrangement and should be treated as an advertisement."
+    },
+    "accountSection": {
+      "title": "Accounts",
+      "body": "You're responsible for maintaining the confidentiality of your account credentials and for all activity under your account."
+    },
+    "liabilitySection": {
+      "title": "Limitation of liability",
+      "body": "SkinSync recommendations are provided \"as is\" without warranty. We are not liable for reactions to, or outcomes from, products purchased through our recommendations."
+    },
+    "contactSection": {
+      "title": "Contact us",
+      "body": "For any questions about these terms, contact us at hello@skinsync.example."
+    }
+  },
   "Quiz": {
     "steps": {
       "skinType": "Skin Type",
@@ -77,6 +145,7 @@
     "title": "Your Personalized Routine",
     "shopOn": "Shop on {platform}",
     "checkoutTitle": "Ready to shop your routine?",
-    "affiliateDisclaimer": "SkinSync links to trusted retailers like Shopee, Lazada, and TikTok Shop. We may earn a commission on qualifying purchases, at no extra cost to you."
+    "affiliateDisclaimerLabel": "Advertisement",
+    "affiliateDisclaimer": "The product links below go to Shopee, Lazada, and TikTok Shop. SkinSync may earn a commission on qualifying purchases, at no extra cost to you."
   }
 }

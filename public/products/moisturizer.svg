@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Moisturizer">
+  <circle cx="100" cy="100" r="100" fill="#FDF2F8"/>
+  <rect x="64" y="70" width="72" height="80" rx="14" fill="#FFFFFF" stroke="#DB2777" stroke-width="4"/>
+  <rect x="64" y="70" width="72" height="20" rx="10" fill="#F9A8D4"/>
+  <rect x="70" y="46" width="60" height="20" rx="8" fill="#7C3AED"/>
+  <circle cx="100" cy="120" r="16" fill="#FDF2F8"/>
+  <path d="M100 108c6 6 12 12 12 20a12 12 0 1 1-24 0c0-8 6-14 12-20z" fill="#DB2777"/>
+</svg>

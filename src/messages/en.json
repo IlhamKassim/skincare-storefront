@@ -22,7 +22,7 @@
     "missionTitle": "What SkinSync is",
     "missionBody": "SkinSync is an independent skincare diagnostic tool built for the Malaysian market. Answer a few questions about your skin type, concerns, and daily environment, and SkinSync scores a real product catalog against Malaysia's climate — humidity, heat, and air-conditioning — to recommend a routine suited to your skin, not a generic one built for a different climate.",
     "howTitle": "How it works",
-    "howBody": "The quiz feeds your answers into a scoring engine that weighs climate fit, your specific concerns, and ingredient matches, while excluding anything unsuitable for your sensitivity level. Each recommended product links out to where you can actually buy it — Shopee, Lazada, or TikTok Shop — so you can complete the purchase on the platform you already use.",
+    "howBody": "The quiz feeds your answers into a scoring engine that weighs climate fit, your specific concerns, and ingredient matches, while excluding anything unsuitable for your sensitivity level. Each recommended product links out to where you can actually buy it on Shopee, so you can complete the purchase there.",
     "independenceTitle": "Independent, not a marketplace store",
     "independenceBody": "SkinSync is a standalone project — it is not operated by, affiliated with, or a storefront within Shopee, Lazada, or TikTok Shop. Product links are disclosed affiliate links: SkinSync may earn a commission on qualifying purchases at no extra cost to you. Full details are in the Terms of Service.",
     "contactTitle": "Contact",
@@ -56,7 +56,7 @@
     },
     "storageSection": {
       "title": "How it's stored and who has access",
-      "body": "Your data is stored with Supabase, our database provider, which acts as a data processor on our behalf. We do not sell your personal data. When you click through to shop a recommended product, we record which product and marketplace (Shopee, Lazada, or TikTok Shop) you clicked — not your quiz answers — so we can measure which recommendations are useful."
+      "body": "Your data is stored with Supabase, our database provider, which acts as a data processor on our behalf. We do not sell your personal data. When you click through to shop a recommended product, we record which product you clicked and the marketplace it links to (currently Shopee) — not your quiz answers — so we can measure which recommendations are useful."
     },
     "retentionSection": {
       "title": "How long we keep it",
@@ -81,7 +81,7 @@
     },
     "affiliateSection": {
       "title": "Advertisement / Affiliate disclosure",
-      "body": "SkinSync's product recommendations link to third-party marketplaces — Shopee, Lazada, and TikTok Shop. These are affiliate links: SkinSync may earn a commission on qualifying purchases made through them, at no extra cost to you. This is a paid, commission-based arrangement and should be treated as an advertisement."
+      "body": "SkinSync's product recommendations link to third-party marketplaces — currently Shopee, with other marketplaces added over time. These are affiliate links: SkinSync may earn a commission on qualifying purchases made through them, at no extra cost to you. This is a paid, commission-based arrangement and should be treated as an advertisement."
     },
     "accountSection": {
       "title": "Accounts",
@@ -161,6 +161,6 @@
     "shopOn": "Shop on {platform}",
     "checkoutTitle": "Ready to shop your routine?",
     "affiliateDisclaimerLabel": "Advertisement",
-    "affiliateDisclaimer": "The product links below go to Shopee, Lazada, and TikTok Shop. SkinSync may earn a commission on qualifying purchases, at no extra cost to you."
+    "affiliateDisclaimer": "The product links below go to Shopee. SkinSync may earn a commission on qualifying purchases, at no extra cost to you."
   }
 }

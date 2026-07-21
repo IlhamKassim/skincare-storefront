@@ -22,7 +22,7 @@
     "missionTitle": "Apa itu SkinSync",
     "missionBody": "SkinSync ialah alat diagnostik penjagaan kulit bebas yang dibina untuk pasaran Malaysia. Jawab beberapa soalan tentang jenis kulit, masalah, dan persekitaran harian anda, dan SkinSync menilai katalog produk sebenar berdasarkan iklim Malaysia — kelembapan, haba, dan hawa dingin — untuk mencadangkan rutin yang sesuai dengan kulit anda, bukan rutin generik yang dibina untuk iklim lain.",
     "howTitle": "Cara ia berfungsi",
-    "howBody": "Kuiz ini menyalurkan jawapan anda ke dalam enjin penilaian yang menimbang kesesuaian iklim, masalah spesifik anda, dan padanan bahan aktif, sambil mengecualikan apa-apa yang tidak sesuai untuk tahap sensitiviti anda. Setiap produk yang disyorkan memaut ke tempat anda boleh membelinya — Shopee, Lazada, atau TikTok Shop — supaya anda boleh melengkapkan pembelian di platform yang anda sudah gunakan.",
+    "howBody": "Kuiz ini menyalurkan jawapan anda ke dalam enjin penilaian yang menimbang kesesuaian iklim, masalah spesifik anda, dan padanan bahan aktif, sambil mengecualikan apa-apa yang tidak sesuai untuk tahap sensitiviti anda. Setiap produk yang disyorkan memaut ke tempat anda boleh membelinya di Shopee, supaya anda boleh melengkapkan pembelian di sana.",
     "independenceTitle": "Bebas, bukan kedai pasaran",
     "independenceBody": "SkinSync adalah projek bebas — ia tidak dikendalikan oleh, bergabung dengan, atau menjadi kedai dalam Shopee, Lazada, atau TikTok Shop. Pautan produk adalah pautan gabungan (affiliate) yang didedahkan: SkinSync mungkin memperoleh komisen daripada pembelian yang layak tanpa sebarang kos tambahan kepada anda. Butiran lengkap terdapat dalam Terma Perkhidmatan.",
     "contactTitle": "Hubungi",
@@ -56,7 +56,7 @@
     },
     "storageSection": {
       "title": "Cara ia disimpan dan siapa yang mempunyai akses",
-      "body": "Data anda disimpan bersama Supabase, penyedia pangkalan data kami, yang bertindak sebagai pemproses data bagi pihak kami. Kami tidak menjual data peribadi anda. Apabila anda klik untuk membeli produk yang disyorkan, kami merekodkan produk dan pasaran (Shopee, Lazada, atau TikTok Shop) yang anda klik — bukan jawapan kuiz anda — supaya kami dapat mengukur cadangan yang berguna."
+      "body": "Data anda disimpan bersama Supabase, penyedia pangkalan data kami, yang bertindak sebagai pemproses data bagi pihak kami. Kami tidak menjual data peribadi anda. Apabila anda klik untuk membeli produk yang disyorkan, kami merekodkan produk dan pasaran (pada masa ini Shopee) yang anda klik — bukan jawapan kuiz anda — supaya kami dapat mengukur cadangan yang berguna."
     },
     "retentionSection": {
       "title": "Berapa lama kami simpan",
@@ -81,7 +81,7 @@
     },
     "affiliateSection": {
       "title": "Iklan / Pendedahan Gabungan",
-      "body": "Cadangan produk SkinSync memaut ke pasaran pihak ketiga — Shopee, Lazada, dan TikTok Shop. Ini adalah pautan gabungan (affiliate): SkinSync mungkin memperoleh komisen daripada pembelian yang layak melalui pautan ini, tanpa sebarang kos tambahan kepada anda. Ini adalah susunan berbayar berasaskan komisen dan harus dianggap sebagai iklan."
+      "body": "Cadangan produk SkinSync memaut ke pasaran pihak ketiga — pada masa ini Shopee, dengan pasaran lain akan ditambah dari semasa ke semasa. Ini adalah pautan gabungan (affiliate): SkinSync mungkin memperoleh komisen daripada pembelian yang layak melalui pautan ini, tanpa sebarang kos tambahan kepada anda. Ini adalah susunan berbayar berasaskan komisen dan harus dianggap sebagai iklan."
     },
     "accountSection": {
       "title": "Akaun",
@@ -161,6 +161,6 @@
     "shopOn": "Beli di {platform}",
     "checkoutTitle": "Bersedia untuk membeli rutin anda?",
     "affiliateDisclaimerLabel": "Iklan",
-    "affiliateDisclaimer": "Pautan produk di bawah membawa anda ke Shopee, Lazada, dan TikTok Shop. SkinSync mungkin memperoleh komisen daripada pembelian yang layak, tanpa sebarang kos tambahan kepada anda."
+    "affiliateDisclaimer": "Pautan produk di bawah membawa anda ke Shopee. SkinSync mungkin memperoleh komisen daripada pembelian yang layak, tanpa sebarang kos tambahan kepada anda."
   }
 }
